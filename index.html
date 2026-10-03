@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Zork, le voyage vers les étoiles</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #000814;
+      color: #9fd8ff;
+      font-family: "Press Start 2P", monospace;
+      text-align: center;
+      font-size: 10px;
+    }
+    canvas {
+      margin-top: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 30px #0055aa;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="jeu"></canvas>
+  <p>Flèches ← ↑ → ↓ : déplacer Zork &nbsp;|&nbsp; ESPACE : coup d'épée (contre le boss)</p>
+
+  <!-- Le jeu est rangé dans plusieurs fichiers. L'ordre est important ! -->
+  <script src="js/niveaux.js"></script>
+  <script src="js/outils.js"></script>
+  <script src="js/themes.js"></script>
+  <script src="js/personnage.js"></script>
+  <script src="js/ennemis.js"></script>
+  <script src="js/boss.js"></script>
+  <script src="js/jeu.js"></script>
+</body>
+</html>
